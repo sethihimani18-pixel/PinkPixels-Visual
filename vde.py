@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, send_file
+from flask import Flask, request, jsonify, send_file, render_template
 import os
 from PIL import Image
 import numpy as np
@@ -76,7 +76,7 @@ def compare():
 
 @vde.route("/")
 def home():
-    return "Visual Difference Engine is Running!"
+    return render_template("index.html")
 
 
 if __name__ == "__main__":
