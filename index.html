@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Difference Engine</title>
+</head>
+<body>
+    <h1>Visual Difference Engine</h1>
+    <br>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="originalFile">Upload Original File:</label>
+        <input type="file" id="originalFile" name="originalFile" accept=".txt,.md,.html,.csv,.json,.xml,.png,.jpg,.jpeg,.pdf" required>
+        <br><br>
+        <label for="modifiedFile">Upload Modified File:</label>
+        <input type="file" id="modifiedFile" name="modifiedFile" accept=".txt,.md,.html,.csv,.json,.xml,.png,.jpg,.jpeg,.pdf" required>
+        <br><br>
+        <button type="submit">Compare Files</button>
+    
+   <pre class="output">{{result}}</pre>
+</body>
+</html>
